@@ -1,0 +1,56 @@
+/*Here I created  a tool to assess the strength of passwords entered by users. Implement
+algorithms to analyze factors such as length, complexity, and uniqueness to provide
+feedback on password strength.*/
+
+import java.util.Scanner;
+public class PasswordStrengthChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+        int strengthScore = calculateStrength(password);
+        System.out.println("Password strength: " + getStrengthLevel(strengthScore));
+    }
+    public static int calculateStrength(String password) {
+        int lengthScore = 0;
+        int complexityScore = 0;
+        int uniquenessScore = 0;
+        if (password.length() >= 8) {
+            lengthScore = 2;
+        } else if (password.length() >= 5) {
+            lengthScore = 1;
+        }
+        boolean hasUpper = false;
+        boolean hasLower = false;
+        boolean hasDigit = false;
+        boolean hasSpecial = false;
+        for (char c : password.toCharArray()) {
+            if (Character.isUpperCase(c)) hasUpper = true;
+            if (Character.isLowerCase(c)) hasLower = true;
+            if (Character.isDigit(c)) hasDigit = true;
+            if (!Character.isLetterOrDigit(c)) hasSpecial = true;
+        }
+        if (hasUpper) complexityScore++;
+        if (hasLower) complexityScore++;
+        if (hasDigit) complexityScore++;
+        if (hasSpecial) complexityScore++;
+        int uniqueChars = (int) password.chars().distinct().count();
+        if (uniqueChars > 5) {
+            uniquenessScore = 2;
+        } else if (uniqueChars > 3) {
+            uniquenessScore = 1;
+        }
+        return lengthScore + complexityScore + uniquenessScore;
+    }
+    public static String getStrengthLevel(int score) {
+        if (score >= 7) {
+            return "Very Strong";
+        } else if (score >= 5) {
+            return "Strong";
+        } else if (score >= 3) {
+            return "Overall password strength is Moderate. Consider improving your password.";
+        } else {
+            return "Overall password strength is weak. Consider improving your password.";
+        }
+    }
+}
