@@ -81,5 +81,5 @@ Lack of Contextual Analysis: The tool does not check against commonly used passw
 
 Conclusion
 
-The Password Strength Checker project provides a useful and practical tool for users to evaluate and improve their password security. By focusing on length, complexity, and uniqueness, the tool offers a well-rounded assessment of password strength and encourages the creation of secure passwords. This project serves as a foundational example of how basic security principles can be implemented in a user-friendly application
+The Password Strength Checker project provides a useful and practical tool for users to evaluate and improve their password security. By focusing on length, complexity, and uniqueness, the tool offers a well-rounded assessment of password strength and encourages the creation of secure passwords. This project serves as a foundational example of how basic security principles can be implemented in a user-friendly application.
 
