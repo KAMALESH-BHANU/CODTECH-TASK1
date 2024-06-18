@@ -50,6 +50,10 @@ User Input:
 
 The user is prompted to enter a password.
 
+Output:
+
+.![password](https://github.com/KAMALESH-BHANU/CODTECH-TASK1/assets/173052485/50e2d125-ec68-462d-ba77-c47b9cb0c0d9)
+
 Strength Calculation:
 
 The tool evaluates the password and calculates a strength score based on predefined criteria.
@@ -71,5 +75,5 @@ Lack of Contextual Analysis: The tool does not check against commonly used passw
 
 Conclusion
 
-The Password Strength Checker project provides a useful and practical tool for users to evaluate and improve their password security. By focusing on length, complexity, and uniqueness, the tool offers a well-rounded assessment of password strength and encourages the creation of secure passwords. This project serves as a foundational example of how basic security principles can be implemented in a user-friendly application.![password](https://github.com/KAMALESH-BHANU/CODTECH-TASK1/assets/173052485/50e2d125-ec68-462d-ba77-c47b9cb0c0d9)
+The Password Strength Checker project provides a useful and practical tool for users to evaluate and improve their password security. By focusing on length, complexity, and uniqueness, the tool offers a well-rounded assessment of password strength and encourages the creation of secure passwords. This project serves as a foundational example of how basic security principles can be implemented in a user-friendly application
 
