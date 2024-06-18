@@ -15,19 +15,21 @@ OVERVIEW OF THE PROJECT
 
 Project : Password Strength Checker: Evaluating Length, Complexity, and Uniqueness.
 
+Objective
+
 The Password Strength Checker project is a Java-based tool designed to evaluate the strength of user-entered passwords. The tool analyzes various factors such as length, complexity, and uniqueness to provide a comprehensive assessment of password strength. The primary goal of this project is to help users create strong, secure passwords by offering feedback on the strength of their passwords and suggesting improvements if necessary.
 
 Key Features
 
-Length Analysis:
+> Length Analysis:
 
 The tool checks the length of the password and assigns a score based on its length. Longer passwords generally contribute to stronger password strength.
 
-Complexity Analysis:
+> Complexity Analysis:
 
 The tool evaluates the complexity of the password by checking for the presence of uppercase letters, lowercase letters, digits, and special characters. Each of these elements adds to the complexity score, enhancing the password's security.
 
-Uniqueness Analysis:
+> Uniqueness Analysis:
 
 The tool assesses the uniqueness of the password by counting the number of distinct characters. A higher number of unique characters indicates a more secure password.
 Overall Strength Assessment:
@@ -36,11 +38,11 @@ Based on the combined scores from length, complexity, and uniqueness, the tool p
 
 Code Explanation
 
-Main Method:
+> Main Method:
 
 The main method handles user input by prompting the user to enter a password. It then calls the calculateStrength method to compute the strength score of the password and uses the getStrengthLevel method to determine the strength category based on the score.
 
-Calculate Strength Method:
+> Calculate Strength Method:
 
 This method evaluates the password based on three criteria: length, complexity, and uniqueness.
 Length Score: Assigns a score based on the password's length, with longer passwords receiving higher scores.
@@ -48,7 +50,7 @@ Complexity Score: Analyzes the presence of different character types (uppercase,
 Uniqueness Score: Counts the number of distinct characters in the password and assigns a score based on the count.
 The total score is the sum of the length, complexity, and uniqueness scores.
 
-Get Strength Level Method:
+> Get Strength Level Method:
 
 This method translates the total score into a descriptive strength category. Scores are mapped to categories such as "Very Strong," "Strong," "Moderate," and "Weak," providing users with a clear understanding of their password's strength.
 
@@ -66,6 +68,10 @@ Strength Calculation:
 
 The tool evaluates the password and calculates a strength score based on predefined criteria.
 
+Technology Used:
+
+The primary programming language used in the project is Java
+
 Feedback:
 
 The tool provides feedback on the password's strength, helping users understand how secure their password is and suggesting improvements if necessary.
@@ -75,11 +81,6 @@ Benefits
 Security Improvement: Helps users create stronger passwords, thereby enhancing security.
 User Education: Educates users about the factors that contribute to password strength.
 Immediate Feedback: Provides instant feedback, enabling users to improve their passwords in real-time.
-
-Limitations
-
-Static Rules: The criteria for evaluating password strength are predefined and may not cover all aspects of password security.
-Lack of Contextual Analysis: The tool does not check against commonly used passwords or context-specific vulnerabilities (e.g., using personal information).
 
 Conclusion
 
