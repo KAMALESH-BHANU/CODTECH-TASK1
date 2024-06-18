@@ -13,6 +13,8 @@ MENTOR : SRAVANI GOUNI
 
 OVERVIEW OF THE PROJECT
 
+Project : Password Strength Checker: Evaluating Length, Complexity, and Uniqueness.
+
 The Password Strength Checker project is a Java-based tool designed to evaluate the strength of user-entered passwords. The tool analyzes various factors such as length, complexity, and uniqueness to provide a comprehensive assessment of password strength. The primary goal of this project is to help users create strong, secure passwords by offering feedback on the strength of their passwords and suggesting improvements if necessary.
 
 Key Features
